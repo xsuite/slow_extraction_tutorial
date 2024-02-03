@@ -2,7 +2,6 @@ mb:  sbend, l=1.661, angle=0.3926990817, e1=0.19634954085, e2=0.19634954085;
 qf1: quadrupole, l=2*0.175, k1:= kqf1;
 qd:  quadrupole, l=2*0.175, k1:= kqd;
 qf2: quadrupole, l=2*0.175, k1:= kqf2;
-qa: quadrupole, l=0.556,   k1:= kqf1;
 
 kqf1 := kqf;
 kqf2 := kqf;
@@ -32,7 +31,6 @@ pimms:sequence,refer=centre,l=75.24;
               sf1, at=24.045;
               mb, at=25.4875;
               qf2.4: qf2, at=26.7675;
-              qa, at=27.9425;
               qf1.3: qf1, at=29.1175;
               mb, at=30.5725;
               qd.4: qd, at=32.1525;

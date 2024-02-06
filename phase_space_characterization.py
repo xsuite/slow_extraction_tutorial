@@ -56,10 +56,10 @@ def characterize_phase_space_at_septum(line, num_turns=2000, plot=False):
     stable_area = np.linalg.det([x_norm_fp, px_norm_fp, [1, 1, 1]])
 
     # Measure slope of the separatrix at the semptum
-    x_separ = mon_separatrix.x[1, :]
-    px_separ = mon_separatrix.px[1, :]
-    x_norm_separ = nc_sep.x_norm[1, :]
-    px_norm_separ = nc_sep.px_norm[1, :]
+    x_separ = mon_separatrix.x[1, :].copy()
+    px_separ = mon_separatrix.px[1, :].copy()
+    x_norm_separ = nc_sep.x_norm[1, :].copy()
+    px_norm_separ = nc_sep.px_norm[1, :].copy()
 
     x_separ[px_norm_separ < -1e-2] = 99999999. # TEEEEEST
 
@@ -95,13 +95,32 @@ def characterize_phase_space_at_septum(line, num_turns=2000, plot=False):
         plt.ylabel(r'$\hat{y}$ [$10^{-3}$]')
 
         # Plot separatrix
-        ax_geom.plot(mon_separatrix.x[0, :], mon_separatrix.px[0, :], '.', color='C2', alpha=0.5)
+        x_triang =mon_separatrix.x[0, :]
+        px_triang = mon_separatrix.px[0, :]
+        x_norm_triang = nc_sep.x_norm[0, :]
+        px_norm_triang = nc_sep.px_norm[0, :]
+
+        theta_triang = np.angle(x_norm_triang + 1j * px_norm_triang)
+        idx = np.argsort(theta_triang)
+        x_triang = x_triang[idx]
+        px_triang = px_triang[idx]
+        x_norm_triang = x_norm_triang[idx]
+        px_norm_triang = px_norm_triang[idx]
+
         mask_alive = mon_separatrix.state[1, :] > 0
-        ax_geom.plot(mon_separatrix.x[1, mask_alive], mon_separatrix.px[1, mask_alive], '.', color='C1', alpha=0.5)
+        for ii in range(3):
+            ax_geom.plot(mon_separatrix.x[1, mask_alive][ii::3],
+                         mon_separatrix.px[1, mask_alive][ii::3],
+                         '-', lw=3, color='C1', alpha=0.9)
+        ax_geom.plot(x_triang, px_triang, '-', lw=3, color='C2', alpha=0.9)
         ax_geom.plot(x_fp, px_fp, '*', markersize=10, color='k')
 
-        ax_norm.plot(nc_sep.x_norm[0, :] * 1e3, nc_sep.px_norm[0, :] * 1e3, '.', color='C2', alpha=0.5)
-        ax_norm.plot(nc_sep.x_norm[1, mask_alive] * 1e3, nc_sep.px_norm[1, mask_alive] * 1e3, '.', color='C1', alpha=0.5)
+        for ii in range(3):
+            ax_norm.plot(nc_sep.x_norm[1, mask_alive][ii::3] * 1e3,
+                         nc_sep.px_norm[1, mask_alive][ii::3] * 1e3,
+                         '-', lw=3, color='C1', alpha=0.9)
+        ax_norm.plot(x_norm_triang * 1e3, px_norm_triang * 1e3,
+                     '-', lw=3, color='C2', alpha=0.9)
         ax_norm.plot(x_norm_fp*1e3, px_norm_fp*1e3, '*', markersize=10, color='k')
 
         x_plt = [x_septum - 1e-2, x_septum + 1e-2]

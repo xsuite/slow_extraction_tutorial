@@ -11,6 +11,7 @@ se1: sextupole, l=0.2, k2:=kse1;
 se2: sextupole, l=0.2, k2:=kse2;
 
 pimms:sequence,refer=centre,l=75.24;
+              extr_septum: marker, at=0.0;
               qfa.1: qfa, at=2.3875;
               mb, at=3.8125;
               qd.1: qd, at=5.2925;
@@ -57,5 +58,4 @@ pimms:sequence,refer=centre,l=75.24;
               qd.8: qd, at=69.7725;
               mb, at=71.4275;
               qfa.8: qfa, at=72.6775;
-              es_septum: marker, at=75.24;
 endsequence;

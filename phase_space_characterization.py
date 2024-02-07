@@ -61,7 +61,7 @@ def characterize_phase_space_at_septum(line, num_turns=1000, plot=False):
     x_norm_separ = nc_sep.x_norm[1, :].copy()
     px_norm_separ = nc_sep.px_norm[1, :].copy()
 
-    x_separ[px_norm_separ < -1e-2] = 99999999. # TEEEEEST
+    x_separ[px_norm_separ < -1e-2] = 99999999. # Mask away second separatrix
 
     i_septum = np.argmin(np.abs(x_separ - x_septum))
 

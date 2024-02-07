@@ -92,7 +92,7 @@ def characterize_phase_space_at_septum(line, num_turns=1000, plot=False):
         plt.gca().set_aspect('equal', adjustable='datalim')
 
         plt.xlabel(r'$\hat{x}$ [$10^{-3}$]')
-        plt.ylabel(r'$\hat{y}$ [$10^{-3}$]')
+        plt.ylabel(r'$\hat{px}$ [$10^{-3}$]')
 
         # Plot separatrix
         x_triang =mon_separatrix.x[0, :]

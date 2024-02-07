@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def characterize_phase_space_at_septum(line, num_turns=2000, plot=False):
+def characterize_phase_space_at_septum(line, num_turns=1000, plot=False):
 
     tw = line.twiss(method='4d')
 

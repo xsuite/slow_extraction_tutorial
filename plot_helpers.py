@@ -8,7 +8,10 @@ def arrange_phase_space_plot():
     ax_geom.set_xlim(-5e-2, 5e-2); ax_geom.set_ylim(-5e-3, 5e-3)
     ax_norm.set_xlim(-15e-3, 15e-3); ax_norm.set_ylim(-15e-3, 15e-3)
     ax_norm.set_aspect('equal', adjustable='datalim')
+    ax_geom.set_xlabel(r'${x} [m]$')
+    ax_geom.set_ylabel(r'${p}_x$')
     ax_norm.set_xlabel(r'$\hat{x}$')
-    ax_norm.set_ylabel(r'$\hat{px}$')
+    ax_norm.set_ylabel(r'$\hat{p}_x$')
+    plt.subplots_adjust(wspace=0.3)
 
     return ax_geom, ax_norm

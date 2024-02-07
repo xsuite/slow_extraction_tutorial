@@ -126,6 +126,9 @@ def characterize_phase_space_at_septum(line, num_turns=1000, plot=False):
         x_plt = [x_septum - 1e-2, x_septum + 1e-2]
         ax_geom.plot(x_plt, np.polyval(poly_sep, x_plt), '--k', linewidth=3)
         ax_geom.axvline(x=x_septum, color='k', alpha=0.4, linestyle='--')
+        plt.subplots_adjust(wspace=0.3)
+        ax_geom.set_title('Physical phase space')
+        ax_norm.set_title('Normalized phase space')
 
     return {
         'dpx_dx_at_septum': dpx_dx_at_septum,

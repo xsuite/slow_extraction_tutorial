@@ -1,3 +1,5 @@
+! Based on CERN-PS-99-010-DI, TERA Foundation
+
 mb:  sbend, l=1.661, angle=0.3926990817, e1=0.19634954085, e2=0.19634954085;
 qfa: quadrupole, l=2*0.175, k1:= kqfa;
 qd:  quadrupole, l=2*0.175, k1:= kqd;

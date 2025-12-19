@@ -53,18 +53,18 @@
   },
   "sbend": {
    "__class__": "Bend",
-   "edge_exit_model": "full",
    "num_multipole_kicks": 5,
    "edge_entry_model": "full",
-   "order": 5
+   "order": 5,
+   "edge_exit_model": "full"
   },
   "rbend": {
    "__class__": "RBend",
-   "edge_exit_model": "full",
    "num_multipole_kicks": 5,
    "rbend_model": "adaptive",
    "edge_entry_model": "full",
    "order": 5,
+   "edge_exit_model": "full",
    "angle": 0.0,
    "length_straight": 0.0
   },
@@ -124,84 +124,84 @@
   },
   "mb": {
    "__class__": "Bend",
-   "edge_exit_model": "full",
-   "edge_exit_angle": 0.19634954085,
+   "length": 1.661,
    "num_multipole_kicks": 5,
+   "angle": 0.3926990817,
    "edge_entry_angle": 0.19634954085,
    "edge_entry_model": "full",
-   "angle": 0.3926990817,
    "order": 5,
-   "length": 1.661,
+   "edge_exit_angle": 0.19634954085,
+   "edge_exit_model": "full",
    "prototype": "sbend"
   },
   "qfa": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "quadrupole"
   },
   "qd": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "quadrupole"
   },
   "qfb": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "quadrupole"
   },
   "sd1": {
    "__class__": "Sextupole",
-   "num_multipole_kicks": 5,
-   "k2": 0.8182613739535255,
-   "order": 5,
    "length": 0.2,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k2": 0.8182626027402617,
    "prototype": "sextupole"
   },
   "sf1": {
    "__class__": "Sextupole",
-   "num_multipole_kicks": 5,
-   "k2": -1.4024464824336498,
-   "order": 5,
    "length": 0.2,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k2": -1.4024470863752925,
    "prototype": "sextupole"
   },
   "sd2": {
    "__class__": "Sextupole",
-   "num_multipole_kicks": 5,
-   "k2": 0.8182613739535255,
-   "order": 5,
    "length": 0.2,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k2": 0.8182626027402617,
    "prototype": "sextupole"
   },
   "sf2": {
    "__class__": "Sextupole",
-   "num_multipole_kicks": 5,
-   "k2": -1.4024464824336498,
-   "order": 5,
    "length": 0.2,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k2": -1.4024470863752925,
    "prototype": "sextupole"
   },
   "se1": {
    "__class__": "Sextupole",
+   "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5,
-   "length": 0.2,
    "prototype": "sextupole"
   },
   "se2": {
    "__class__": "Sextupole",
+   "length": 0.2,
    "num_multipole_kicks": 5,
    "order": 5,
-   "length": 0.2,
    "prototype": "sextupole"
   },
   "extr_septum": {
@@ -210,194 +210,194 @@
   },
   "qfa.1": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "qd.1": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfa.2": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "qfb.1": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qd.2": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfb.2": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qfb.3": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qd.3": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfb.4": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qfa.3": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "qd.4": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfa.4": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "qfa.5": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "qd.5": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfa.6": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "qfb.5": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qd.6": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfb.6": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qfb.7": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qd.7": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfb.8": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.5247898392265107,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.5247898393354247,
    "prototype": "qfb"
   },
   "qfa.7": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "qd.8": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": -0.5239342884189264,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": -0.5239342885122431,
    "prototype": "qd"
   },
   "qfa.8": {
    "__class__": "Quadrupole",
-   "num_multipole_kicks": 5,
-   "k1": 0.31196666460898864,
-   "order": 5,
    "length": 0.35,
+   "num_multipole_kicks": 5,
+   "order": 5,
+   "k1": 0.3119666647190968,
    "prototype": "qfa"
   },
   "||drift_1": {
@@ -535,8 +535,8 @@
   "septum_aperture": {
    "__class__": "LimitRect",
    "max_y": 0.1,
-   "max_x": 0.1,
    "min_y": -0.1,
+   "max_x": 0.1,
    "min_x": -0.1
   }
  },
@@ -863,105 +863,105 @@
   "s_tol": 1e-06
  },
  "particle_ref": {
-  "particle_id": [
-   0
-  ],
-  "delta": [
-   0.0
-  ],
-  "ay": [
-   0.0
-  ],
-  "_rng_s3": [
-   0
-  ],
-  "s": [
-   0.0
-  ],
-  "chi": [
-   1.0
-  ],
-  "gamma0": [
-   1.2131577849578903
-  ],
-  "state": [
-   1
-  ],
-  "y": [
-   0.0
-  ],
-  "at_turn": [
-   0
-  ],
-  "p0c": [
-   644444594.4097908
-  ],
-  "at_element": [
-   0
-  ],
-  "rpp": [
-   1.0
-  ],
-  "q0": 1.0,
-  "px": [
-   0.0
-  ],
-  "_rng_s4": [
-   0
-  ],
-  "spin_x": [
-   0.0
-  ],
-  "parent_particle_id": [
-   0
-  ],
-  "spin_y": [
-   0.0
-  ],
-  "ptau": [
-   0.0
-  ],
   "beta0": [
    0.5661604120079287
+  ],
+  "zeta": [
+   0.0
   ],
   "anomalous_magnetic_moment": [
    0.0
   ],
-  "x": [
+  "spin_y": [
    0.0
   ],
   "py": [
    0.0
   ],
-  "zeta": [
+  "t_sim": 4.432906644549619e-07,
+  "state": [
+   1
+  ],
+  "rvv": [
+   1.0
+  ],
+  "y": [
    0.0
   ],
-  "spin_z": [
+  "_rng_s2": [
+   0
+  ],
+  "delta": [
+   0.0
+  ],
+  "at_turn": [
+   0
+  ],
+  "_rng_s3": [
+   0
+  ],
+  "ay": [
    0.0
   ],
   "pdg_id": [
    2212
   ],
+  "rpp": [
+   1.0
+  ],
+  "ax": [
+   0.0
+  ],
+  "mass0": 938272088.16,
+  "particle_id": [
+   0
+  ],
+  "ptau": [
+   0.0
+  ],
+  "spin_z": [
+   0.0
+  ],
+  "weight": [
+   1.0
+  ],
   "charge_ratio": [
    1.0
   ],
-  "_rng_s2": [
-   0
+  "spin_x": [
+   0.0
   ],
-  "mass0": 938272088.16,
-  "rvv": [
+  "px": [
+   0.0
+  ],
+  "gamma0": [
+   1.2131577849578903
+  ],
+  "s": [
+   0.0
+  ],
+  "start_tracking_at_element": -1,
+  "chi": [
    1.0
+  ],
+  "q0": 1.0,
+  "_rng_s4": [
+   0
   ],
   "_rng_s1": [
    0
   ],
-  "start_tracking_at_element": -1,
-  "weight": [
-   1.0
+  "p0c": [
+   644444594.4097908
   ],
-  "t_sim": 4.432906644549619e-07,
-  "ax": [
+  "x": [
    0.0
+  ],
+  "at_element": [
+   0
+  ],
+  "parent_particle_id": [
+   0
   ]
  },
  "_var_management_data": {
@@ -983,14 +983,14 @@
    "hbar": 6.582119569e-25,
    "erad": 2.8179403262e-15,
    "prad": 5.174168663504975e-12,
-   "kqfa": 0.31196666460898864,
-   "kqd": -0.5239342884189264,
-   "kqfb": 0.5247898392265107,
-   "ksd": 0.8182613739535255,
-   "ksf": -1.4024464824336498,
+   "kqfa": 0.3119666647190968,
+   "kqd": -0.5239342885122431,
+   "kqfb": 0.5247898393354247,
+   "ksd": 0.8182626027402617,
+   "ksf": -1.4024470863752925,
    "kse1": 0,
    "kse2": 0,
-   "kqf_common": 0.41441644691696033
+   "kqf_common": 0.41441644696030994
   },
   "functions": {
    "_funcs": {}
